@@ -12,35 +12,100 @@
 </head>
 <body>
     <header>
-        <nav>
-            <h1 class="nav-text"><a href="#">About</a></h1>
-            <a href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
-            <h1 class="nav-text"><a href="#">Projects</a></h1>
-        </nav>
+            <div class="header-text">
+                <a href="#" class="link link-about" >About Me</a>
+                <a href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
+                <a href="#" class="link link-projects">Projects</a>
+            </div>
     </header>
 
-    <section>
+<!-- ==================== HERO ====================-->
+
+    <div class="container container-hero">
         <main role="main">
-            <div class="container">
-                <div class="hero">
-                    <h1 class="main-text">Dimitris </br> Boutakoglou</h1>
-                    <h2 class="main-sub-text">Front-end Web Developer - Mobile First Design Advocate - Sleeping Enthousiast</h2>
+            <div class="hero">
+
+                <div class="hero-text">
+                    <h1 class="hero-name">Dimitris </br> Boutakoglou</h1>
+                    <p class="hero-sub">Front-end Web Developer - Mobile First Design Advocate - Sleeping Enthusiast</p>
                 </div>
 
-                <div class="hero-buttons">
-                    <button class="contact-button">Let's Talk</button>     
-                    <button class="dark-button">Dark</button>
+                <div class="hero-btns">
+                    <button class="contact-button">Let's Talk</button> 
+                    <img src="./images/dark.png" id="dark-button" class="dark-button" alt="image of moon for dark mode">
                 </div>
-            
-                
+
                 <div class="scroll-button">
-                    <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
+                    <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
                     <p>About Me</p>
                 </div>
 
             </div>
-        </main>
-    </section>
+            
+    </div>
 
+<!-- ==================== ABOUT ====================-->
+
+    <div class="container container-flex" id="about">
+            <div class="about">
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Integer laoreet urna pharetra sem aliquam posuere. 
+                        Proin vestibulum rhoncus luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Curabitur consectetur placerat justo, ac ultricies lacus. Nullam pharetra dapibus tellus, a varius ex maximus quis. 
+                        Curabitur vehicula sit amet magna non congue.
+                    </p>
+                </div>
+                <div class="about-tech">
+                    <h2 class="about-tech-stack-header">Current Tech Stack</h2>
+                        <div class="tech-pills">
+                            <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>HTML</p></div>
+                            <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>CSS</p></div>
+                            <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>JavaScript</p></div>
+                            <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>HTML</p></div>
+                        </div>
+
+                    <h2 class="about-tech-stack-header">Learning Stack</h2>
+                        <div class="tech-pills">
+                            <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>HTML</p></div>
+                            <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>CSS</p></div>
+                            <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>JavaScript</p></div>
+                            <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>HTML</p></div>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<!-- ==================== PROJECTS ====================-->
+
+    <div class="container container-flex">
+        <div class="projects" id="projects">
+            <div class="projects">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Integer laoreet urna pharetra sem aliquam posuere. 
+                    Proin vestibulum rhoncus luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Curabitur consectetur placerat justo, ac ultricies lacus. Nullam pharetra dapibus tellus, a varius ex maximus quis. 
+                    Curabitur vehicula sit amet magna non congue.
+                </p>
+            </div>
+            <div class="aboutprojects">
+                <h2 class="about-tech-stack-header">Current Tech Stack</h2>
+                    <div class="tech-pills">
+                        <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>HTML</p></div>
+                        <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>CSS</p></div>
+                        <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>JavaScript</p></div>
+                        <div class="tech-pill"><img src="./images/html5-balck-icon.png" class="tech-img"><p>HTML</p></div>
+                    </div>
+            </div>
+        </div>
+
+    </main>
+    </div>
+
+
+    <script src="./index.js"></script>
 </body>
 </html>
