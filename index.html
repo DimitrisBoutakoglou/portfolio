@@ -15,9 +15,9 @@
 <body>
     <header>
             <div class="header-text">
-                <a href="#about" class="link link-about" >About Me</a>
+                <a href="#about" class="link link-about">About Me</a>
                 <a href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
-                <a href="#" class="link link-projects">Projects</a>
+                <a href="#projects" class="link link-projects">Projects</a>
             </div>
     </header>
 
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="hero-btns">
-                    <button class="contact-button">Let's Talk</button> 
+                    <a href="#contact"><button class="contact-button">Let's Talk</button></a> 
                     <img src="./images/dark.png" id="dark-button" class="dark-button" alt="image of moon for dark mode">
                 </div>
 
@@ -86,9 +86,12 @@
 
 <!-- ==================== PROJECTS ====================-->
 
-    <div class="projects-container">
+    <div class="projects-container" id="projects">
         <div class="projects">
-            <h1 class="projects-header-mobile">Projects</h1> <!-- INVISIBLE IN DESKTOP WIDTH -->
+            <div class="projects-header-mobile"> <!-- INVISIBLE IN DESKTOP WIDTH -->
+                <h1>Projects</h1>
+            </div>  
+            
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <img src="./images/pricing.jpg" class="card-img-top mb-2 rounded-2" alt="Image of pricing component">
@@ -183,9 +186,25 @@
 
 
 
-
 <!-- ==================== CONTACT ====================-->        
-    <div class="container container-flex">Contact</div>
+    <div class="container container-flex" id="contact">
+            <div class="contact-section" id="contact-section">
+                <h1 class="contact-header">Let's Talk!</h1>
+                <div class="contact-icons">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github-alt"></i>                    
+                </div>
+                    <form action="" class="contact">
+                        <p class="contact-form-header">Contact form</p>
+                        <input type="text" name="name" placeholder="Your name" class="contact-input" required>
+                        <input type="email" name="email" placeholder="Your e-mail" class="contact-input" required>
+                        <textarea name="message" placeholder="Your message" class="contact-input message" required></textarea>
+                        <button class="submit-button" type="submit">Send Message</button>
+                    </form>
+
+            </div>
+    </div>
 
 </main>
 
