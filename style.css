@@ -23,6 +23,12 @@ a{
     color: black;
 }
 
+.link{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 /* .dark-mode {
      background-color: coral; 
      color: white;
@@ -160,6 +166,7 @@ header{
 
     .hero-sub{
         font-size: 1.05rem; 
+        font-weight: 500;
     }
 
     .hero-btns{
@@ -178,12 +185,19 @@ header{
 }
 
 /* =================== ABOUT LAYOUT MOBILE =================== */
+
+.about{
+    margin-top: 3em;
+}
+
 .about-text{
     font-weight: 500;
+    font-size: 1.15rem;
+    text-align: center;
 }
 
 .about-tech{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
     width: 100%;
     padding-bottom: 5em;
@@ -212,22 +226,101 @@ header{
     display: flex;
     align-items: center;
     gap: .25em;
-    
+    font-weight: 500;
 }
 
-.tech-img{
-    width: 15px;
-    height: 15px;
-    margin-top: 2px;
+.tech-pill p{
+    margin-bottom: 1px;
+    cursor: default;
+}
+
+.fa-brands,
+.fa-solid{
+    font-size: 1rem;
+}
+
+.about-tech-stack-header{
+    margin-top: 1em;
 }
 
 /* =================== ABOUT LAYOUT DESKTOP =================== */
 
 @media (min-width:675px) {
-    .about-tech{
-
+    .about-text{
+        font-size: 1.25rem;
+        font-weight: 400;
+        width: 75%;
+        margin: auto;
     }
+
+    .about-tech{
+        margin-bottom: -8em;
+        margin-top: 5em;
+    }
+
+    .about-tech-stack-header{
+        margin-top: 1em;
+    }
+
 }
+
+/* =================== PROJECTS LAYOUT MOBILE =================== */
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+}
+
+.projects{
+    margin: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.projects-header-mobile{
+    text-align: center;
+}
+
+.projects-desktop-cols{
+    display: none;
+}
+
+/* =================== PROJECTS LAYOUT DESKTOP =================== */
+
+@media (min-width: 675px){
+
+    .projects-header-desktop{
+        text-align: center;
+    }
+
+    .projects{
+        display: none;
+    }
+
+    .projects-container{
+        margin-top: 3em;
+    }
+
+    .col-left,
+    .col-right{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    
+    .projects-desktop-cols{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+        margin-top: 5em;
+        flex-wrap: wrap;
+    }
+} 
+
 
 /* =================== BUTTONS STYLING =================== */
 
@@ -296,3 +389,7 @@ header{
         font-size: .9rem;
     }
 }
+
+/* =========================================
+          CARD BUTTON STYLE    
+============================================*/
