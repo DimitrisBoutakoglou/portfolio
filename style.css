@@ -13,6 +13,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #FFFAFA !important;
+}
+
 .logo{
     width: 125px;
 }
@@ -35,10 +39,7 @@ a{
     transform: scale(1.1); 
 }
 
-/* .dark-mode {
-     background-color: coral; 
-     color: white;
-} */
+
 
 
 /* =================== GENERAL LAYOUT =================== */
@@ -51,7 +52,6 @@ a{
 }
 
 .container-hero{
-    border: 1px solid red;
     width: 90%;
     max-width: 900px;
     height: 83vh;
@@ -59,12 +59,11 @@ a{
 }
 
 .container-flex{
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    
+    flex-direction: column;
 }
 
 /* =================== HEADER LAYOUT MOBILE =================== */
@@ -199,7 +198,7 @@ header{
 .about-text{
     font-weight: 500;
     font-size: 1.15rem;
-    text-align: center;
+    padding-left: 1em;
 }
 
 .about-tech{
@@ -252,16 +251,18 @@ header{
 /* =================== ABOUT LAYOUT DESKTOP =================== */
 
 @media (min-width:675px) {
+
     .about-text{
-        font-size: 1.25rem;
-        font-weight: 400;
+        color: #555555;
+        font-size: 1.3em;
+        font-weight: 500;
         width: 75%;
         margin: auto;
+        text-align: center;
     }
 
     .about-tech{
-        margin-bottom: -8em;
-        margin-top: 5em;
+        margin-top: 8em;
     }
 
     .about-tech-stack-header{
@@ -294,6 +295,10 @@ header{
 
 .projects-header-desktop{
     display: none;
+}
+
+.card-text{
+    font-weight: 500;
 }
 
 /* =================== PROJECTS LAYOUT DESKTOP =================== */
