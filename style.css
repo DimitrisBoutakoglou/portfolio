@@ -17,6 +17,7 @@ body{
     background-color: #FFFAFA !important;
 }
 
+
 .logo{
     width: 125px;
 }
@@ -39,7 +40,11 @@ a{
     transform: scale(1.1); 
 }
 
-
+strong{
+    font-weight: bolder;
+    font-size: 1.25rem;
+    color: black;
+}
 
 
 /* =================== GENERAL LAYOUT =================== */
@@ -112,7 +117,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
 }
 
 .container-hero{
@@ -125,14 +129,15 @@ header{
 }
 
 .hero-name{
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     font-weight: 400;
     line-height: 1em;
 }
 
 .hero-sub{
-    margin-top: 1em;
-    font-weight: 400;
+    margin-top: .5em;
+    font-size: 1.1rem;
+    font-weight: 500;
     color: #143774;
 }
 
@@ -166,15 +171,17 @@ header{
     }
 
     .hero-name{
-        font-size: 7rem;
+        font-size: 8rem;
     }
 
     .hero-sub{
-        font-size: 1.05rem; 
-        font-weight: 500;
+        padding-top: 1em;
+        font-size: 1.15rem; 
+        font-weight: 600;
     }
 
     .hero-btns{
+        padding-top: .5em;
         flex-direction: row;
         align-items: center;
         gap: .75em;
@@ -192,17 +199,24 @@ header{
 /* =================== ABOUT LAYOUT MOBILE =================== */
 
 .about{
-    margin-top: 3em;
+    margin-top: 20em;
 }
+
+.about-header{
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+
 
 .about-text{
     font-weight: 500;
     font-size: 1.15rem;
     padding-left: 1em;
+    overflow:  hidden;
 }
 
 .about-tech{
-    /* border: 1px solid black; */
     border-radius: 10px;
     width: 100%;
     padding-bottom: 5em;
@@ -252,6 +266,15 @@ header{
 
 @media (min-width:675px) {
 
+    .about{
+    margin-top: 5em;
+}
+
+    .about-header{
+        text-align: center;
+        margin: 0;
+    }
+
     .about-text{
         color: #555555;
         font-size: 1.3em;
@@ -262,11 +285,17 @@ header{
     }
 
     .about-tech{
-        margin-top: 8em;
+        margin-top: 5em;
     }
 
     .about-tech-stack-header{
         margin-top: 1em;
+    }
+
+    strong{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: black;
     }
 
 }
@@ -276,6 +305,7 @@ header{
 .projects-container{
     display: flex;
     justify-content: center;
+    margin-top: 25em;
 }
 
 .projects{
@@ -295,6 +325,11 @@ header{
 
 .projects-header-desktop{
     display: none;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .card-text{
@@ -389,7 +424,11 @@ header{
 
 .contact-input{
     width: 300px;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
 }
+
 
 .submit-button{
     background-color: #7d9fd9;
@@ -407,6 +446,7 @@ header{
     color: black;
     transform: scale(1.05);
 }
+
 
 /* =================== CONTACT LAYOUT DESKTOP =================== */
 
