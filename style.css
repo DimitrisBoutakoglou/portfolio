@@ -199,7 +199,7 @@ header{
 /* =================== ABOUT LAYOUT MOBILE =================== */
 
 .about{
-    margin-top: 20em;
+    padding-top: 35em;
 }
 
 .about-header{
@@ -262,6 +262,9 @@ header{
     margin-top: 1em;
 }
 
+
+
+
 /* =================== ABOUT LAYOUT DESKTOP =================== */
 
 @media (min-width:675px) {
@@ -305,7 +308,7 @@ header{
 .projects-container{
     display: flex;
     justify-content: center;
-    margin-top: 25em;
+    
 }
 
 .projects{
@@ -313,6 +316,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding-top: 30em;
 }
 
 .projects-header-mobile{
@@ -335,6 +339,7 @@ header{
 .card-text{
     font-weight: 500;
 }
+
 
 /* =================== PROJECTS LAYOUT DESKTOP =================== */
 
