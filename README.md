@@ -3,7 +3,7 @@
 
 # Personal Portfolio
 
-Hey! This is my personal Portfolio's repository, made using HTML, CSS (lot's of flexbox) and JS.
+Hey! This is my personal Portfolio's repository. I made the website using HTML, CSS (lot's of flexbox) and JavaScript.
 
 
 ## Features
