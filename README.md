@@ -1,4 +1,4 @@
-[![MIT License](https://img.shields.io/badge/Live%20Link-8A2BE2)](https://dimitrisboutakoglou.github.io/portfolio/)
+[![Portfolio](https://img.shields.io/badge/Live%20Link-8A2BE2)](https://dimitrisboutakoglou.github.io/portfolio/)
 
 
 # Personal Portfolio
