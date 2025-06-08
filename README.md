@@ -1,5 +1,6 @@
+[![MIT License](https://img.shields.io/badge/Live%20Link-8A2BE2)](https://dimitrisboutakoglou.github.io/portfolio/)
 
-![Live Link](https://img.shields.io/badge/Live%20Link-8A2BE2?link=https%3A%2F%2Fdimitrisboutakoglou.github.io%2Fportfolio%2F)
+
 # Personal Portfolio
 
 Hey! This is my personal Portfolio's repository, made using HTML, CSS (lot's of flexbox) and JS.
